@@ -11,12 +11,9 @@ const About = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
           <p>
-            Hi, my name is <b>Devansh Sahni</b> and I am from New Delhi, India.
-            I'm a <b>MERN stack web developer</b> and a final year college student pursuing <b>BTech in CSE</b>. <br/><br/>
-            I have done an internship as a <b>software developer</b> at GoalFi which is a fintech startup.
-            I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do photography, you can check out some of my shots here <a href="https://www.instagram.com/devansh_sahni_/?hl=en" target='_blank'>Instagram.</a>
+          Hi, my name is <b>Kapil Mogre</b>, and I am from Nagpur, India. I have 3 years of professional experience working as a <b>Front-End Developer</b> at <a href='https://www.nobroker.in/' target='_blank' >NoBroker.in,</a> a unicorn proptech company.
+            <br /> <br />
+            At Nobroker, I built and maintained web apps for a smooth user experience. I worked with teams to create scalable solutions in real estate tech, using JavaScript, React, and responsive design to make user-friendly interfaces.
           </p>
         </div>
 
@@ -34,21 +31,7 @@ const About = () => {
       
       <h1 className='SkillsHeading'>Professional Skillset</h1>
       <div className='skills'>
-        
-        <Skills skill='React' />
-        <Skills skill='Node' />
-        <Skills skill='Express' />
-        <Skills skill='MongoDb' />
-        <Skills skill='Git' />
-        <Skills skill='Github' />
-        <Skills skill='Javascript' />
-        <Skills skill='C++' />
-        <Skills skill='Postman' />
-        <Skills skill='Figma' />
-        <Skills skill='Vercel' />
-        <Skills skill='Npm' />
-        <Skills skill='Bootstrap'/>
-        
+        {['Html', 'CSS', 'JS', 'React','Tailwind',  'Bootstrap', 'Sass', 'MUI', 'Git', 'Npm', 'Postman', 'Figma' ].map((skill) => <Skills skill={skill} />)}
       </div>
     </>
   )

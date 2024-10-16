@@ -1,52 +1,52 @@
 import React from 'react';
-import {FaGithub} from "react-icons/fa";
-import {CgFileDocument} from "react-icons/cg";
+import { FaGithub } from "react-icons/fa";
+import { CgFileDocument } from "react-icons/cg";
 
 
-const  ProjectBox = ({projectPhoto, projectName}) => {
+const ProjectBox = ({ projectPhoto, projectName }) => {
   const desc = {
-    TindogDesc : "This website is a landing page of Tinder but for dogs. It is a responsive website which was made to understand Bootstrap. I also learned how to host my project on Github and then how to deploy that project using Github pages.",
-    TindogGithub : "https://github.com/DevanshSahni/tindog",
-    TindogWebsite : "https://devanshsahni.github.io/tindog/",
+    "Memory Card": "The Memory Card Game is a web-based game where players match pairs of cards by flipping them over. It’s designed to help improve memory skills and is built using React JS. The game features a responsive design, making it accessible on various devices.",
+    "Memory Card Github" : "https://github.com/kapilmogre1998/memory-card-game",
+    "Memory Card Website" : "https://memory-card-game-blue.vercel.app/",
 
-    RogFreeDesc : "A website that shows you over seven specialized yoga postures for specific diseases or health problems. This was a group project made in a team of two for a 36-hour-long online hackathon named Hackodisha 2.0.",
-    RogFreeGithub : "https://github.com/DevanshSahni/Rog-Free",
-    RogFreeWebsite : "https://devanshsahni.github.io/Rog-Free/",
+    "Rock Paper Scissor": "This project is a simple web-based Rock-Paper-Scissors game that allows users to play against the computer. The game features a clean and intuitive interface where users can choose their move and see the computer's choice in real time. The game tracks scores, displaying the results of each round and the overall winner.",
+    "Rock Paper Scissor Github" : "https://github.com/kapilmogre1998/js-rock-paper-scissors",
+    "Rock Paper Scissor Website" : "https://js-rock-paper-scissors-six.vercel.app/",
 
-    NewsletterDesc:"A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
-    NewsletterGithub:"",
-    NewsletterWebsite:"https://newsletter-signup-teal.vercel.app/",
-    
-    WigglesDesc:"An innovative pet management web app enabling pet parents to create unique pet IDs, securely store and share vaccination records, and generate QR codes for pet profiles, enhancing safety.",
-    WigglesGithub:"https://github.com/DevanshSahni/Wiggles",
-    WigglesWebsite:"https://wiggles.vercel.app/",
+    "Search Country": "The Search Country application is a web-based tool designed to allow users to search and view detailed information about any country in the world. The application fetches data from a public API and displays relevant details like the country’s name, capital, population, flag, languages, currencies, and more.",
+    "Search Country Github":"https://github.com/kapilmogre1998/search-country",
+    "Search Country Website":"https://search-country-ez84.vercel.app/",
   }
 
-  let show ='';
-  if(desc[projectName + 'Github']===""){
-    show="none";
+  let show = '';
+  if (desc[projectName + 'Github'] === "") {
+    show = "none";
   }
-    
+
   return (
-    <div className='projectBox'> 
-        <img className='projectPhoto' src={projectPhoto} alt="Project display" /> 
+    <div className='projectBox'>
+      <img className='projectPhoto' src={projectPhoto} alt="Project display" />
+      <div className='project-desc' >
         <div>
-            <br />
-            <h3>{projectName}</h3>
-            <br />
-            {desc[projectName + 'Desc']}
-            <br />
-
-            <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank'>
-              <button className='projectbtn'><FaGithub/> Github</button>
-            </a>
-
-            <a href={desc[projectName + 'Website']} target='_blank'>
-              <button className='projectbtn'><CgFileDocument/> Demo</button>
-            </a>
+          <br />
+          <h3>{projectName}</h3>
+          <br />
+          {desc[projectName]}
+          <br />
         </div>
+        <div>
+          <a style={{ display: show }} href={desc[projectName + ' Github']} target='_blank'>
+            <button className='projectbtn'><FaGithub /> Github</button>
+          </a>
+
+          <a href={desc[projectName + ' Website']} target='_blank'>
+            <button className='projectbtn'><CgFileDocument /> Demo</button>
+          </a>
+        </div>
+
+      </div>
     </div>
   )
 }
 
-export default  ProjectBox
+export default ProjectBox

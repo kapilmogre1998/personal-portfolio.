@@ -20,7 +20,7 @@ function App() {
 
     setTimeout(()=>{
     SetLoading(false)}
-    ,1900)
+    , 800)
   },[])  
   
   return (
@@ -52,7 +52,7 @@ function App() {
         <Route path="/Resume" element={<Resume/>}/>
       </Routes>
       
-      <Footer/>
+      {/* <Footer/> */}
       </div>
       )}  
     </>

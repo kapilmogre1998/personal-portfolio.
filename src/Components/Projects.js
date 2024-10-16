@@ -4,16 +4,19 @@ import NewsletterImage from '../images/NewsletterImage.png';
 import RogfreeImage from '../images/RogfreeImage.png';
 import TindogImage from '../images/TindogImage.png';
 import WigglesImage from '../images/WigglesImage.png';
+import memoryCardImage from '../images/memory_card_game.png';
+import rockpaperscissor from '../images/rock-paper-scissors.png';
+import searchcountry from '../images/search-country.png';
 
 const Projects = () => {
   return (
     <div>
-      <h1 className='projectHeading'>My <b>Projects</b></h1>
+      <h1 className='projectHeading'>My <b>Personal Projects</b></h1>
       <div className='project'>
-        <ProjectBox projectPhoto={WigglesImage} projectName="Wiggles" />
-        <ProjectBox projectPhoto={NewsletterImage} projectName="Newsletter" />
-        <ProjectBox projectPhoto={RogfreeImage} projectName="RogFree" />
-        <ProjectBox projectPhoto={TindogImage} projectName="Tindog" />
+        <ProjectBox projectPhoto={memoryCardImage} projectName="Memory Card" />
+        <ProjectBox projectPhoto={rockpaperscissor} projectName="Rock Paper Scissor" />
+        <ProjectBox projectPhoto={searchcountry} projectName="Search Country" />
+        {/* <ProjectBox projectPhoto={TindogImage} projectName="Tindog" /> */}
       </div>
 
     </div>
