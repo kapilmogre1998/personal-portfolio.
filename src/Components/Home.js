@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
 import Typed from "./Typed.js";
 import Tilt from 'react-parallax-tilt';
-import Avatar from '../images/Avatar.png';
+import Avatar from '../images/personal-photo.jpeg';
 import { CiCoffeeCup } from "react-icons/ci";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
@@ -40,7 +40,7 @@ const Home = () => {
           <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
           <p>
             I am a passionate Frontend Developer with over 3 years of experience building responsive,
-            user-friendly web applications. I specialize in creating seamless user experiences using modern technologies like <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>React</b>. <br /> <br />
+            user-friendly web applications. I specialize in creating seamless user experiences using modern technologies like <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>ReactJS</b>. <br /> <br />
             With a strong focus on clean code and performance optimization, I strive to deliver intuitive and engaging digital products.
             I enjoy collaborating with designers and backend teams to bring creative ideas to life and continuously learn new tools and techniques to stay at the forefront of web development.
           </p>
