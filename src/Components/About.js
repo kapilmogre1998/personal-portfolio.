@@ -31,7 +31,7 @@ const About = () => {
       
       <h1 className='SkillsHeading'>Professional Skillset</h1>
       <div className='skills'>
-        {['Html', 'CSS', 'JS', 'React','Tailwind',  'Bootstrap', 'Sass', 'MUI', 'Git', 'Npm', 'Postman', 'Figma' ].map((skill) => <Skills skill={skill} />)}
+        {['Html', 'CSS', 'JS', 'React','Tailwind',  'Bootstrap', 'Sass', 'MUI', 'Git', 'Npm', 'Postman', 'Figma', 'Nginx' ].map((skill) => <Skills skill={skill} />)}
       </div>
     </>
   )

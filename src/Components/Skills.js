@@ -8,8 +8,9 @@ import { FaSass } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
 // import { CgCPlusPlus } from "react-icons/cg";
 // import {DiNodejs, DiJavascript1} from "react-icons/di";
-import {SiExpress, SiMongodb, SiVercel} from "react-icons/si";
+// import {SiExpress, SiMongodb, SiVercel} from "react-icons/si";
 import {SiPostman} from "react-icons/si";
+import { SiNginx } from "react-icons/si";
 
 const Skills = ({skill}) => {
     const icon = {
@@ -25,7 +26,8 @@ const Skills = ({skill}) => {
         Bootstrap: <FaBootstrap/>,
         Html: <ImHtmlFive2 />,
         CSS: <DiCss3 />,
-        JS: <DiJsBadge />
+        JS: <DiJsBadge />,
+        Nginx: <SiNginx />
         // Github : <FaGithub/>,
         // Vercel : <SiVercel/>,
         // Javascript: <DiJavascript1/>,
